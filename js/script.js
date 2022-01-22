@@ -325,4 +325,4 @@ function initialize() {
 	map.setMapTypeId('roadatlas');
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+/*google.maps.event.addDomListener(window, 'load', initialize);*/
