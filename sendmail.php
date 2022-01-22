@@ -1,5 +1,5 @@
 <?php
-    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: https://www.jhnath90.github.io');
     //we need to get our variables first
     
     $email_to =   'joshhnath@gmail.com'; //the address to which the email will be sent
