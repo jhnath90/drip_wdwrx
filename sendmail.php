@@ -1,5 +1,6 @@
 <?php
     header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: null');
     header("Content-Type: application/json; charset=UTF-8");    
     header("Access-Control-Allow-Methods: POST, DELETE, OPTIONS");    
     header("Access-Control-Max-Age: 3600");    
@@ -18,6 +19,8 @@
      who are we replying to. */
     $headers  = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
+    $headers .= "Access-Control-Allow-Origin: *\r\n";
+    $headers .= "Access-Control-Allow-Origin: null\r\n";
     
     if(mail($email_to, $subject, $message, $headers)){
         echo 'sent'; // we are sending this text to the ajax request telling it that the mail is sent..      
