@@ -1,6 +1,9 @@
 <?php
     header('Access-Control-Allow-Origin: *');
-    header("Access-Control-Allow-Headers: Content-Type, origin");
+    header("Content-Type: application/json; charset=UTF-8");    
+    header("Access-Control-Allow-Methods: POST, DELETE, OPTIONS");    
+    header("Access-Control-Max-Age: 3600");    
+    header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Origin");    
     //we need to get our variables first
     
     $email_to =   'joshhnath@gmail.com'; //the address to which the email will be sent
